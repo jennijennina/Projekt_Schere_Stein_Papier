@@ -341,6 +341,7 @@ footer a {
   box-shadow: 0px 0px 41px 18px rgba(87, 62, 62, 0.7);
 }
 /* ##### FOOTER ##### */
+
 @keyframes textLoop {
   0% {
     opacity: 0;
@@ -441,7 +442,7 @@ footer a {
   opacity: 0;
   animation-name: textLoop;
   animation-duration: 15s;
-  animation-delay: 115s;
+  animation-delay: 155s;
 }
 .text12 {
   position: absolute;
@@ -449,7 +450,7 @@ footer a {
   opacity: 0;
   animation-name: textLoop;
   animation-duration: 15s;
-  animation-delay: 130s;
+  animation-delay: 170s;
 }
 .text13 {
   position: absolute;
@@ -457,7 +458,7 @@ footer a {
   opacity: 0;
   animation-name: textLoop;
   animation-duration: 15s;
-  animation-delay: 140s;
+  animation-delay: 185s;
 }
 .text14 {
   position: absolute;
@@ -465,7 +466,31 @@ footer a {
   opacity: 0;
   animation-name: textLoop;
   animation-duration: 15s;
-  animation-delay: 150s;
+  animation-delay: 200s;
+}
+.text15 {
+  position: absolute;
+  z-index: 15;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 215s;
+}
+.text16 {
+  position: absolute;
+  z-index: 16;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 230s;
+}
+.text17 {
+  position: absolute;
+  z-index: 17;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 245s;
 }
 .textStyle {
   color: white;
@@ -477,7 +502,7 @@ footer a {
   width: 800px;
   height: 70px;
   border: solid 1px white;
-  border-radius: 5px;
+  border-radius: 10px;
   background: rgb(0, 255, 4);
   background: linear-gradient(
     90deg,
@@ -508,6 +533,13 @@ footer a {
   .startModal-content {
     width: 35%;
   }
+  #randomTexts {
+    width: 800px;
+  }
+  .textStyle {
+    width: 800px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -529,6 +561,13 @@ footer a {
   .startModal-content {
     width: 45%;
   }
+  #randomTexts {
+    width: 500px;
+  }
+  .textStyle {
+    width: 500px;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -543,6 +582,14 @@ footer a {
   }
   .startModal-content {
     width: 70%;
+  }
+  #randomTexts {
+    width: 300px;
+  }
+  .textStyle {
+    font-size: 1rem;
+    width: 300px;
+    text-align: center;
   }
 }
 

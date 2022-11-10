@@ -22,7 +22,7 @@ const startGame = document.getElementById("start-game");
 const roundsInfo = document.getElementById("rounds-info");
 const STATE_WIN = "You win 😎";
 const STATE_LOSE = "You lose 😭";
-const STATE_DRAW = "Round Tie 😐";
+const STATE_DRAW = "You tie 😐";
 let gameOptions = [];
 let playerSelection = null;
 let computerSelection = null;
@@ -30,18 +30,6 @@ let tieRound = null;
 let selectedRounds = null;
 let currentRound = 0;
 // Startbildschirm
-
-const audio = new Audio("../music/marsMissionTheme.mp3");
-
-const playMusic = () => {
-  audio.play();
-  audio.volume = 0.2;
-};
-
-const stopMusic = () => {
-  audio.pause();
-  audio.currentTime = 0;
-};
 
 const standardMode = () => {
   gameOptions = ["rock", "scissors", "paper"];
@@ -87,7 +75,6 @@ const startRounds = () => {
   roundsInfo.innerHTML = `Rounds ${selectedRounds}/${currentRound}`;
   computerScore.innerHTML = "0";
   playerScore.innerHTML = "0";
-  playMusic();
 };
 resetAllValues = () => {
   currentRound = 0;
@@ -197,10 +184,8 @@ const compareTheChoices = (player, computer) => {
     tie();
   }
   if (currentRound === +selectedRounds) {
-    finalScore.innerHTML = `You ${playerScore.innerHTML} - ${computerScore.innerHTML} Computer `;
     resetAllValues();
     uncheckInputs();
-    stopMusic();
     startModal.style.display = "block";
   }
 };
