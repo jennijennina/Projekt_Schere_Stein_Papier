@@ -1,0 +1,568 @@
+header {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: teal;
+  border-color: black;
+}
+header ul {
+  list-style: none;
+  text-align: right;
+  /* (0, 0, 0, 0.732) */
+  padding: 10px;
+}
+header li {
+  display: inline-block;
+  margin: 15px;
+}
+body {
+  /*height: 100vh;*/
+  font-family: "Poppins", sans-serif;
+  background: url(../img/miriam-espacio-iUS8HYDhCsQ-unsplash.jpg) center/cover
+    no-repeat;
+  /* color: white; */
+}
+/*section {
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  text-align: right;
+}*/
+h1 {
+  font-size: 7rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 5px red;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* color: rgb(3, 121, 29); */
+}
+/* body {
+  
+  width: 100%;
+  background: url('../img/Mini.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+} */
+
+/* header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 20vh;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  padding-top: 0rem;
+  color: rgb(3, 121, 29);
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+} */
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: greenyellow;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.startModal-content {
+  background: rgb(116, 248, 76);
+  background: linear-gradient(
+    69deg,
+    rgba(116, 248, 76, 1) 0%,
+    rgba(255, 165, 46, 1) 100%
+  );
+  margin: 2% auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 10px black;
+  width: 20%;
+}
+
+.rounds-number {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.rounds-number div {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rounds-number div input {
+  margin-right: 0.5rem;
+}
+
+.rounds-number div input:hover {
+  cursor: pointer;
+}
+.game-mode {
+  margin-top: 1rem;
+}
+.game-mode p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.game-mode p:hover,
+.game-mode p:focus {
+  cursor: pointer;
+}
+
+.start-game {
+  display: inline-block;
+  margin: 1rem auto 0;
+  padding: 0.3rem 1.5rem;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.closeButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-container {
+  width: 30rem;
+  height: 30rem;
+  background: url("../img/photo2.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0.5rem solid #74f84c;
+  border-radius: 0.5rem;
+}
+
+.image-container2 {
+  width: 30rem;
+  height: 30rem;
+  background: url("../img/photo2.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0.5rem solid #ffa52e;
+  border-radius: 0.5rem;
+}
+
+.rock {
+  background: url("../img/rock-main.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+.paper {
+  background: url("../img/paper-main.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+.scissors {
+  background: url("../img/scissors-main.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+.well {
+  background: url("../img/well4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+}
+
+article p:last-of-type {
+  padding-top: 3rem;
+}
+
+.last-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-btns {
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+}
+
+.select-btns img {
+  width: 15%;
+}
+
+.select-btns img:active {
+  position: relative;
+  margin-bottom: -3px;
+  margin-top: 3px;
+}
+
+#well {
+  display: none;
+}
+
+.round-result h3,
+.round-result p {
+  font-size: 3rem;
+  color: rgb(3, 121, 29);
+  font-weight: bold;
+  text-align: center;
+}
+
+#player-score,
+#computer-score {
+  font-size: 2.5rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  opacity: 0.5;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 1.5rem;
+  width: 40%;
+}
+
+.message p {
+  color: #000;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.side {
+  font-size: 1.5rem;
+}
+
+#restart:hover,
+#exit:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
+
+.computer-btns {
+  visibility: hidden;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.win {
+  box-shadow: 0px 0px 41px 18px rgba(7, 255, 5, 0.7);
+}
+
+.lose {
+  box-shadow: 0px 0px 41px 18px rgba(255, 10, 10, 0.7);
+}
+.Tie {
+  box-shadow: 0px 0px 41px 18px rgba(87, 62, 62, 0.7);
+}
+/* ##### FOOTER ##### */
+@keyframes textLoop {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.text1 {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 5s;
+}
+.text2 {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 20s;
+}
+.text3 {
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 35s;
+}
+.text4 {
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 50s;
+}
+.text5 {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 65s;
+}
+.text6 {
+  position: absolute;
+  z-index: 6;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 80s;
+}
+.text7 {
+  position: absolute;
+  z-index: 7;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 95s;
+}
+.text8 {
+  position: absolute;
+  z-index: 8;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 110s;
+}
+.text9 {
+  position: absolute;
+  z-index: 9;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 125s;
+}
+.text10 {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 140s;
+}
+.text11 {
+  position: absolute;
+  z-index: 11;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 115s;
+}
+.text12 {
+  position: absolute;
+  z-index: 12;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 130s;
+}
+.text13 {
+  position: absolute;
+  z-index: 13;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 140s;
+}
+.text14 {
+  position: absolute;
+  z-index: 14;
+  opacity: 0;
+  animation-name: textLoop;
+  animation-duration: 15s;
+  animation-delay: 150s;
+}
+.textStyle {
+  color: white;
+  font-size: 1.5rem;
+  width: 800px;
+  text-align: center;
+}
+#randomTexts {
+  width: 800px;
+  height: 70px;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: rgb(0, 255, 4);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 4, 1) 0%,
+    rgba(0, 0, 0, 0.5993377483443709) 50%,
+    rgba(0, 255, 4, 1) 100%
+  );
+}
+.textPosition {
+  display: flex;
+  align-items: center;
+}
+
+/* ##### RESPONSIVE ##### */
+@media only screen and (max-width: 1440px) {
+  body {
+    height: 100vh;
+  }
+  .image-container {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .image-container2 {
+    width: 23rem;
+    height: 23rem;
+  }
+  .startModal-content {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  #round-result {
+    font-size: 1.5rem;
+  }
+  .image-container {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .image-container2 {
+    width: 18rem;
+    height: 18rem;
+  }
+  .startModal-content {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .image-container {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .image-container2 {
+    width: 14rem;
+    height: 14rem;
+  }
+  .startModal-content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    height: fit-content;
+  }
+  section {
+    flex-direction: column;
+  }
+  .startModal-content {
+    width: 90%;
+  }
+}
+/* 
+/* ##### Embed GIF ##### */
+/* spok */
+/* <iframe src="https://giphy.com/embed/U9mzv68j70jzG" width="480" height="355" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/star-trek-feels-spock-U9mzv68j70jzG">via GIPHY</a></p> */
+
+/* ##### paper ##### */
+/* <iframe src="https://giphy.com/embed/35MAdPmdmRO3oCmWN0" width="351" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/white-paper-blank-35MAdPmdmRO3oCmWN0">via GIPHY</a></p> */
+/* ##### scissor  #####*/
+/* <iframe src="https://giphy.com/embed/lOMP7ZHaPoBptsRlvv" width="340" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jugendzentren-vereinwienerjugendzentren-wienerjugendzentren-lOMP7ZHaPoBptsRlvv">via GIPHY</a></p> */

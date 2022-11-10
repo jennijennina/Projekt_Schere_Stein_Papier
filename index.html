@@ -1,0 +1,179 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt: Schere, Stein, Papier & Co</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <header>
+    ###### Music ######
+   </header>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>STANDARD</li>
+          <li>SPICED UP</li>
+        </ul>
+      </nav> -->
+<!-- <img src="assets/img/mute-transparent.png" alt="" /> -->
+<!-- <h1>Schere, Stein, Papier & mehr</h1>
+    </header>
+    <main>
+      <section></section> -->
+
+<!-- ####### Bild Wabenmuster mit Farbvelauf ####### -->
+
+<!--###### RANDOM-TEXT ###### -->
+<!-- <div></div>
+    </main>
+    <footer id="randomText"></footer>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+   <header>
+    
+          <!-- The Modal -->
+    <div id="start-modal" class="start-modal">
+      <!-- Modal content -->
+      <div class="startModal-content">
+        <!-- <span id="closeButton" class="closeButton">&times;</span> -->
+        <h4>How many rounds ?</h4>
+        <div class="rounds-number">
+          <div>
+            <input
+              type="radio"
+              name="round"
+              id="5"
+              onchange="displayRadioValue()"
+            /><label for="5">5</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="round"
+              id="10"
+              onchange="displayRadioValue()"
+            /><label for="10">10</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="round"
+              id="15"
+              onchange="displayRadioValue()"
+            /><label for="15">15</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="round"
+              id="20"
+              onchange="displayRadioValue()"
+            /><label for="20">20</label>
+          </div>
+        </div>
+        <div class="game-mode">
+          <h4>Select the mode</h4>
+          <p id="standard-txt" onclick="standardMode()">Standard</p>
+          <p id="well-txt" onclick="wellMode()">Spiced Up</p>
+        </div>
+        <button id="start-game"
+        class="start-game"
+        disabled
+        onclick="startRounds()">
+           Start
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <header>
+      <h1>Schere, Stein, Papier & mehr</h1>
+          <article class="round-result">
+          <!-- <h3>VS</h3> -->
+          <p id="round-result">&nbsp;</p>
+      </article>
+  <h1 id="rounds-info">ROUNDS</h1>
+    </header>
+     <main>
+      <section>
+        <article>
+          <h3>YOUR SCORE</h3>
+          <p id="player-score">0</p>
+          <div id="main-image" class="image-container"></div>
+
+          <div class="select-btns">
+            <img src="./assets/img/well.png" alt="well" id="well" />
+            <img src="./assets/img/paper.png" alt="paper" id="paper" />
+            <img src="./assets/img/rock.png" alt="rock" id="rock" />
+            <img
+              src="./assets/img/scissors.png"
+              alt="scissors"
+              id="scissors"
+            />
+          </div>
+
+          <p class="side">Take your pick</p>
+        </article>
+        <article>
+          <h3>COMPUTER SCORE</h3>
+          <p id="computer-score">0</p>
+          <div id="main-image2" class="image-container2"></div>
+          <div class="select-btns computer-btns">
+            <img src="./assets/img/well.png" alt="well" id="well" />
+            <img src="./assets/img/paper.png" alt="paper" id="paper" />
+            <img src="./assets/img/rock.png" alt="rock" id="rock" />
+            <img
+              src="./assets/img/scissors.png"
+              alt="scissors"
+              id="scissors"
+            />
+          </div>
+
+          <p class="side">Computer pick</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      
+      <section id="randomTexts">
+          <div class="textPosition">
+            <p class="text1 textStyle">Du kannst die Runde gewinnen, wenn du den Gegner schlägst...</p>
+            <p class="text2 textStyle">Nachts ist es kälter als draußen...</p>
+            <p class="text3 textStyle">Ein Alien ist ein Alien ist ein Alien...</p>
+            <p class="text4 textStyle">Laufen ist schneller als gehen...</p>
+            <p class="text5 textStyle">Schau auf den Tipp-Bildschirm für weiter Tipps...</p>
+            <p class="text6 textStyle">In Lava schwimmen ist gefährlich...</p>
+            <p class="text7 textStyle">Um den Gegner zu besiegen musst du die Runden gewinnen...</p>
+            <p class="text8 textStyle">Um die Runden zu gewinnen musst du den Gegner besiegen...</p>
+            <p class="text9 textStyle">Stein schlägt Schere, aber nicht Papier...</p>
+            <p class="text10 textStyle">Besiege den Gegner bevor er dich besiegt...</p>
+            <p class="text11 textStyle">Brunnen geht immer...</p>
+            <p class="text12 textStyle">Einmal ist keinmal...</p>
+            <p class="text13 textStyle">Alea iacta est - die Würfeln sind gefallen. Es gibt hier keine Würfel...</p>
+            <p class="text14 textStyle">Einfach nur: POMMES!</p>
+          </div>
+      </section>
+    </footer>
+  </body>
+</html>
